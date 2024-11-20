@@ -46,7 +46,8 @@ Thank you for using the Currency Converter! Occasionally, the API we rely on to 
    - If possible, try reloading the page or restarting the application to see if the issue resolves on its own.
 2. **Update API Key:**
    - Many APIs require an API key for access. If you have received an API key from a provider, make sure it's up to date. If the key is expired or invalid, you will need to request a new one from the API provider.
-3. **Try Alternative APIs:** If the current API is causing issues or you want to explore other reliable options, here’s a list of alternative APIs you can integrate into the application for fetching accurate currency rates:
+3. **Try Alternative APIs:**
+   If the current API is causing issues or you want to explore other reliable options, here’s a list of alternative APIs you can integrate into the application for fetching accurate currency rates:
    - ExchangeRate-API: A simple API offering free and paid plans for currency conversion.
    - Fixer.io: A popular API that provides real-time foreign exchange rates for 170 world currencies. Offers both free and premium plans.
    - CurrencyLayer: A robust API with support for over 170 currencies and historical data.

@@ -35,3 +35,6 @@ This is a simple **Currency Converter** web application built using **HTML**, **
    - The conversion rate and result will be shown automatically.
 5. **Enjoy**
    That's it! You should now be able to use the currency converter on your local machine.
+
+
+

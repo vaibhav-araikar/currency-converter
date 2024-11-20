@@ -38,7 +38,7 @@ This is a simple **Currency Converter** web application built using **HTML**, **
 
 
 
-**Instructions for Handling API Issues in Currency Converter**
+# Instructions for Handling API Issues in Currency Converter
 Thank you for using the Currency Converter! Occasionally, the API we rely on to fetch currency exchange rates may face issues, such as downtime, rate limit restrictions, or service changes. To ensure that your currency conversion remains accurate and functional, we recommend trying alternative APIs.
 **Steps to Use Alternative Currency Conversion APIs:**
 1. **Check for API Issues:**

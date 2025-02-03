@@ -1,5 +1,5 @@
 const BASE_URL =
-  "https://2024-03-06.currency-api.pages.dev/v1/currencies/eur.json";
+  "https://v6.exchangerate-api.com/v6/7105b99689f1ac92f418f09a/latest/";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
@@ -32,13 +32,19 @@ const updateExchangeRate = async () => {
     amtVal = 1;
     amount.value = "1";
   }
-  const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+
+  const URL = `${BASE_URL}${fromCurr.value}`; // Corrected API URL structure
+
   let response = await fetch(URL);
   let data = await response.json();
-  let rate = data[toCurr.value.toLowerCase()];
 
-  let finalAmount = amtVal * rate;
-  msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  if (data && data.conversion_rates) {
+    let rate = data.conversion_rates[toCurr.value];
+    let finalAmount = amtVal * rate;
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+  } else {
+    msg.innerText = "Exchange rate data not available.";
+  }
 };
 
 const updateFlag = (element) => {
